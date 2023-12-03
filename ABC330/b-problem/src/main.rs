@@ -13,7 +13,7 @@ fn main() {
             Some(v) => v,
             None => {println!("min_of_y_ai None"); 0},
         };
-        x[i] = match (l..=r).map(|x| x-a[i]).filter(|&x| -min_of_y_ai <= x && x <= min_of_y_ai).last() {
+        x[i] = match (l..=r).map(|x| x-a[i]).filter(|&x| -min_of_y_ai <= x && x <= min_of_y_ai).next() {
                 Some(v) => v+a[i],
                 None => {println!("x[i] None"); 0},
         };
