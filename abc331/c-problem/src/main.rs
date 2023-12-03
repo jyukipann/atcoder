@@ -1,20 +1,29 @@
 use proconio::input;
+use std::collections::HashMap;
+use std::collections::HashSet;
 
 fn main() {
     input! {
         n : usize,
-        a : [isize; n],
+        mut a : [isize; n],
     }
-    let mut a_with_i: Vec<(usize, isize)> = a.iter()
-        .enumerate()
-        .map(|(i, av)| (i, av.clone()))
-        .collect();
-    a_with_i.sort_by(|(_, av), (_, bv)| av.cmp(bv));
-    let mut a_with_i_filtered: Vec<(usize, isize)> = a_with_i.iter().cloned().collect();
-    let mut b = vec![0; n];
-    for (i, ai) in &a_with_i {
-        a_with_i_filtered = a_with_i_filtered.iter().cloned().filter(|(_, av)| av > ai).collect();
-        b[*i] = a_with_i_filtered.iter().map(|(_, av)| *av).sum();
+    
+    let mut a_map: HashMap<isize, Vec<usize>> = HashMap::new();
+    for (i, &value) in a.iter().enumerate() {
+        a_map.entry(value).or_insert(vec![]).push(i);
+    }
+
+    let a: HashSet<_> = a.iter().cloned().collect();
+    let mut a: Vec<_> = a.into_iter().collect();
+    a.sort_by(|x, y| y.cmp(x));
+
+    let mut b = vec![0_isize; n];
+    let mut sum = 0;
+    for ai in a {
+        for &i in &a_map[&ai] {
+            b[i] = sum;
+        }
+        sum += ai*(a_map[&ai].len() as isize);
     }
     print!(
         "{}",
@@ -22,5 +31,5 @@ fn main() {
             .map(std::string::ToString::to_string)
             .collect::<Vec<_>>()
             .join(" ")
-    );
+    )
 }
