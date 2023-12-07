@@ -1,20 +1,95 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "abc331/a-problem"
-		},
-		{
-			"path": "abc331/b-problem"
-		},
-		{
-			"path": "abc331/c-problem"
-		},
-		{
-			"path": "abc331/d-problem"
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "ABC330/a-problem"
+        },
+        {
+            "path": "ABC330/b-problem"
+        },
+        {
+            "path": "ABC330/c-problem"
+        },
+        {
+            "path": "abc331/a-problem"
+        },
+        {
+            "path": "abc331/b-problem"
+        },
+        {
+            "path": "abc331/c-problem"
+        },
+        {
+            "path": "abc331/d-problem"
+        },
+        {
+            "path": "hhkb/d-problem"
+        },
+        {
+            "path": "hhkb/e-problem"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-a"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-b"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-c"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-d"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-e"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-f"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-g"
+        },
+        {
+            "path": "math-and-algorithm/math-and-algorithm-h"
+        },
+        {
+            "path": "practice/welcome-to-at-coder"
+        },
+        {
+            "path": "tessoku-book/a01"
+        },
+        {
+            "path": "tessoku-book/a02"
+        },
+        {
+            "path": "toyota2023/problema"
+        },
+        {
+            "path": "toyota2023/problemb"
+        },
+        {
+            "path": "toyota2023/problemc"
+        },
+        {
+            "path": "typical90/cross-sum"
+        },
+        {
+            "path": "typical90/cubic-cake"
+        },
+        {
+            "path": "typical90/encyclopedia-of-parentheses"
+        },
+        {
+            "path": "typical90/score-sum-queries"
+        },
+        {
+            "path": "typical90/select-plus-minus-one"
+        },
+        {
+            "path": "typical90/yokan-party"
+        }
+    ],
+    "settings": {}
 }
